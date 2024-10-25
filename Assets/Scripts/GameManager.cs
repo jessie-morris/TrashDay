@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     private float timeToNextScene = 60f;
     private float timeElapsed = 0f;
+    bool trashShopping = false;
 
 
     void Awake()
@@ -28,20 +29,23 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         timeElapsed += Time.deltaTime;
-        if (timeElapsed >= timeToNextScene)
+        if (timeElapsed >= timeToNextScene && !trashShopping)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("SearcHScene");
+            trashShopping = true;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("TrashShopScene");
         }
+
+        scoreText.text = "Cleanup Credits: " + score;
     }
 
     public void AddToScore(int points)
     {
         score += points;
-        scoreText.text = "Score: " + score;
     }
     public void DeductFromScore(int points)
     {
         score -= points;
-        scoreText.text = "Score: " + score;
     }
+
+
 }
