@@ -6,7 +6,7 @@ public class CanControls : MonoBehaviour
 {
     public Sprite[] canSprites;
 
-    private float speed = 5;
+    private float speed = 8;
     private SpriteRenderer spriteRenderer;
     private int spriteIndex = 0;
 
@@ -38,6 +38,8 @@ public class CanControls : MonoBehaviour
             spriteIndex = 0;
         }
         spriteRenderer.sprite = canSprites[spriteIndex];
+
+        GameManager.instance.UpdateScore();
     }
 
     // private Vector3 BoundToScreen(Vector3 newPosition)
