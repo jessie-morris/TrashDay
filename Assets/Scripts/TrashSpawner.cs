@@ -30,10 +30,4 @@ public class TrashSpawner : MonoBehaviour
         int randomTrash = Random.Range(0, TrashSprites.Length);
         GameObject trash = Instantiate(TrashSprites[randomTrash], spawnPosition, Quaternion.identity);
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("are we even getting here?");
-        Destroy(other.gameObject);
-    }
 }

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 154265732}
   m_Layer: 0
   m_Name: loaf-baguette
-  m_TagString: Untagged
+  m_TagString: Compost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 192743627}
   m_Layer: 0
   m_Name: grapes
-  m_TagString: Untagged
+  m_TagString: Compost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 310458961}
   m_Layer: 0
   m_Name: meat-raw
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 414364072}
   m_Layer: 0
   m_Name: soda-can-crushed
-  m_TagString: Untagged
+  m_TagString: Recyclable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1160,7 +1160,7 @@ GameObject:
   - component: {fileID: 531869621}
   m_Layer: 0
   m_Name: meat-sausage
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1551,9 +1551,9 @@ GameObject:
   m_Component:
   - component: {fileID: 986679858}
   - component: {fileID: 986679859}
-  - component: {fileID: 986679861}
   - component: {fileID: 986679862}
   - component: {fileID: 986679863}
+  - component: {fileID: 986679861}
   m_Layer: 0
   m_Name: TrashCan
   m_TagString: Untagged
@@ -1731,7 +1731,7 @@ GameObject:
   - component: {fileID: 1062982569}
   m_Layer: 0
   m_Name: watermelon
-  m_TagString: Untagged
+  m_TagString: Compost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1977,7 +1977,7 @@ GameObject:
   - component: {fileID: 1406562850}
   m_Layer: 0
   m_Name: meat-patty
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2148,7 +2148,7 @@ GameObject:
   - component: {fileID: 1689564258}
   m_Layer: 0
   m_Name: soda-can
-  m_TagString: Untagged
+  m_TagString: Recyclable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2418,7 +2418,7 @@ GameObject:
   - component: {fileID: 2123662650}
   m_Layer: 0
   m_Name: soda-bottle
-  m_TagString: Untagged
+  m_TagString: Recyclable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

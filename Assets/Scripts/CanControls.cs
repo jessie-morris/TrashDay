@@ -10,6 +10,13 @@ public class CanControls : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private int spriteIndex = 0;
 
+    enum CanState
+    {
+        Recycling,
+        Compost,
+        Trash
+    }
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -38,8 +45,39 @@ public class CanControls : MonoBehaviour
             spriteIndex = 0;
         }
         spriteRenderer.sprite = canSprites[spriteIndex];
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        tag = other.tag;
+        bool match = CanMatchTrash((CanState)spriteIndex, tag);
+        if (match)
+        {
+            GameManager.instance.AddToScore(100);
+        }
+        else
+        {
+            GameManager.instance.DeductFromScore(100);
+        }
+        Destroy(other.gameObject);
+    }
 
-        GameManager.instance.UpdateScore();
+    bool CanMatchTrash(CanState state, string tag)
+    {
+        Debug.Log(state + "state, tag: " + tag);
+
+        if (state == CanState.Recycling && tag == "Recyclable")
+        {
+            return true;
+        }
+        if (state == CanState.Compost && tag == "Compost")
+        {
+            return true;
+        }
+        if (state == CanState.Trash && tag == "Trash")
+        {
+            return true;
+        }
+        return false;
     }
 
     // private Vector3 BoundToScreen(Vector3 newPosition)

@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text scoreText;
     private int score = 0;
 
+    private float timeToNextScene = 60f;
+    private float timeElapsed = 0f;
+
 
     void Awake()
     {
@@ -22,9 +25,23 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void UpdateScore()
+    void Update()
     {
-        score += 100;
+        timeElapsed += Time.deltaTime;
+        if (timeElapsed >= timeToNextScene)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("SearcHScene");
+        }
+    }
+
+    public void AddToScore(int points)
+    {
+        score += points;
+        scoreText.text = "Score: " + score;
+    }
+    public void DeductFromScore(int points)
+    {
+        score -= points;
         scoreText.text = "Score: " + score;
     }
 }
