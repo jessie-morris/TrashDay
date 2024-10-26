@@ -24,4 +24,22 @@ public class MenuControls : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("MidgameMenuScene");
     }
+
+    public void SearchDumpsters_OnClick()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("TrashShopScene");
+    }
+    public void Hints_OnClick()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("HintsScene");
+    }
+    public void Computer_OnClick()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("ComputerScene");
+    }
+
+    public void EarnCredits_OnClick()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("CleanupScene");
+    }
 }

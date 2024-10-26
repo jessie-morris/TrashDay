@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    private float timeToNextScene = 10f;
+    private float timeToNextScene = 60f;
     private float timeElapsed = 0f;
     private bool trashShopping = false;
     private bool hardDriveAquired = false;
