@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class CreditsManager : MonoBehaviour
 {
-    [SerializeField] TMP_Text creditsText;
     private int credits = 0;
 
     public static CreditsManager instance;
@@ -23,11 +22,6 @@ public class CreditsManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        creditsText.text = "Cleanup Credits: " + credits;
-    }
 
     public void AddToScore(int points)
     {
@@ -36,5 +30,9 @@ public class CreditsManager : MonoBehaviour
     public void DeductFromScore(int points)
     {
         credits -= points;
+    }
+    public int GetCredits()
+    {
+        return credits;
     }
 }
