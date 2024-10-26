@@ -8,7 +8,12 @@ public class GameManager : MonoBehaviour
     private float timeToNextScene = 60f;
     private float timeElapsed = 0f;
     private bool trashShopping = false;
+
     private bool hardDriveAquired = false;
+    private bool notebookAquired = false;
+    private bool photoAquired = false;
+    private bool collarAquired = false;
+    private bool mascotAquired = false;
 
     void Awake()
     {
@@ -37,6 +42,26 @@ public class GameManager : MonoBehaviour
     public bool IsHardDriveAquired()
     {
         return hardDriveAquired;
+    }
+
+    public bool IsNotebookAquired()
+    {
+        return notebookAquired;
+    }
+
+    public bool IsPhotoAquired()
+    {
+        return hardDriveAquired;
+    }
+
+    public bool IsCollarAquired()
+    {
+        return collarAquired;
+    }
+
+    public bool IsMascotAquired()
+    {
+        return mascotAquired;
     }
 
     public void AquireHardDrive()
