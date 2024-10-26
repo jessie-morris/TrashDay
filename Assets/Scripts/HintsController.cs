@@ -31,11 +31,6 @@ public class HintsController : MonoBehaviour
         ShowHintImage(GameManager.instance.IsMascotAquired, Mascot, MascotImage);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void ShowHintImage(Func<bool> foundFunction, Image hintImage, Sprite hintSprite)
     {
         if (foundFunction())
