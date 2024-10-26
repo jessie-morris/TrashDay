@@ -19,4 +19,9 @@ public class MenuControls : MonoBehaviour
         Debug.Log("hmm");
         UnityEngine.SceneManagement.SceneManager.LoadScene("CleanupScene");
     }
+
+    public void Back_OnClick()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MidgameMenuScene");
+    }
 }
