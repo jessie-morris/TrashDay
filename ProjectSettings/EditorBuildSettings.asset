@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TrashShopScene.unity
     guid: f4e4034356e3844ca9200e2cdaf1de89
   - enabled: 1
+    path: Assets/Scenes/HintsScene.unity
+    guid: f566980f0b190477982b9b7ecb975087
+  - enabled: 1
     path: Assets/Scenes/ComputerScene.unity
     guid: 132cc200567a84c348501ef1238dffc4
   m_configObjects: {}

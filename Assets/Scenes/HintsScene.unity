@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 4191233}
   - component: {fileID: 4191232}
   m_Layer: 0
-  m_Name: SomethingElse
+  m_Name: HardDrive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,7 +157,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 400}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4191232
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a96b0d65252014b5ea6eb6274fdec51c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 230ab9e8d820f4243b10ec029be64da0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 989344738}
   - component: {fileID: 989344739}
   m_Layer: 0
-  m_Name: MemoryRow1 (1)
+  m_Name: MemoryRow2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
