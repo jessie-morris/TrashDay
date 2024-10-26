@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    private float timeToNextScene = 60f;
+    private float timeToNextScene = 10f;
     private float timeElapsed = 0f;
     private bool trashShopping = false;
 
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         if (timeElapsed >= timeToNextScene && !trashShopping)
         {
             trashShopping = true;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("TrashShopScene");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MidgameMenuScene");
         }
 
     }

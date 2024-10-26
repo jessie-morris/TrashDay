@@ -20,6 +20,7 @@ public class CanControls : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        AudioManager.instance.Play("CleanupTheme");
     }
 
     void Update()
@@ -52,6 +53,7 @@ public class CanControls : MonoBehaviour
         bool match = CanMatchTrash((CanState)spriteIndex, tag);
         if (match)
         {
+            Debug.Log("is we hurr?");
             CreditsManager.instance.AddToScore(150);
         }
         else
