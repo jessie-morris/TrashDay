@@ -6,6 +6,7 @@ using UnityEngine;
 public class ComputerManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text consoleText;
+    [SerializeField] private TMP_Text passwordPrompt;
     [SerializeField] private TMP_InputField passwordInput;
 
     private bool booted = false;
@@ -49,7 +50,7 @@ public class ComputerManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         consoleText.text += "\nAttempting to access bitcoin wallet...";
         yield return new WaitForSeconds(2);
-        consoleText.text += "\nEnter Password: ";
+        passwordPrompt.text += "Enter Password: ";
 
         passwordInput.gameObject.SetActive(true);
     }
