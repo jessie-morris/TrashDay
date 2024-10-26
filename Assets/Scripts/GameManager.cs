@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     public bool IsPhotoAquired()
     {
-        return hardDriveAquired;
+        return photoAquired;
     }
 
     public bool IsCollarAquired()
@@ -63,10 +63,4 @@ public class GameManager : MonoBehaviour
     {
         return mascotAquired;
     }
-
-    public void AquireHardDrive()
-    {
-        hardDriveAquired = true;
-    }
-
 }

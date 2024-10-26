@@ -10,6 +10,6 @@ public class CreditsText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        creditsText.text = "Cleanup Credits: " + CreditsManager.instance.GetCredits();
+        // creditsText.text = "Cleanup Credits: " + CreditsManager.instance.GetCredits();
     }
 }
