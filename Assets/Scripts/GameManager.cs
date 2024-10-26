@@ -5,13 +5,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [SerializeField] TMP_Text scoreText;
-    private int score = 0;
-
-    private float timeToNextScene = 60f;
+    private float timeToNextScene = 10f;
     private float timeElapsed = 0f;
-    bool trashShopping = false;
-
+    private bool trashShopping = false;
+    private bool hardDriveAquired = false;
 
     void Awake()
     {
@@ -35,17 +32,16 @@ public class GameManager : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("TrashShopScene");
         }
 
-        scoreText.text = "Cleanup Credits: " + score;
     }
 
-    public void AddToScore(int points)
+    public bool IsHardDriveAquired()
     {
-        score += points;
-    }
-    public void DeductFromScore(int points)
-    {
-        score -= points;
+        return hardDriveAquired;
     }
 
+    public void AquireHardDrive()
+    {
+        hardDriveAquired = true;
+    }
 
 }

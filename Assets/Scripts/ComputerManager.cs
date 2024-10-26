@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trash : MonoBehaviour
+public class ComputerManager : MonoBehaviour
 {
-    private float speed = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +13,6 @@ public class Trash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(0, speed * Time.deltaTime, 0);
+
     }
 }

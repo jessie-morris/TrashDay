@@ -52,11 +52,11 @@ public class CanControls : MonoBehaviour
         bool match = CanMatchTrash((CanState)spriteIndex, tag);
         if (match)
         {
-            GameManager.instance.AddToScore(100);
+            CreditsManager.instance.AddToScore(100);
         }
         else
         {
-            GameManager.instance.DeductFromScore(100);
+            CreditsManager.instance.DeductFromScore(100);
         }
         Destroy(other.gameObject);
     }
