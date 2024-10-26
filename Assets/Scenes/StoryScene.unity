@@ -224,8 +224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 1000}
+  m_AnchoredPosition: {x: 0, y: 2.12}
+  m_SizeDelta: {x: -200, y: 995.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &753426952
 MonoBehaviour:
@@ -247,12 +247,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "After waking up from a coma, you see that the bitcoin price has\njumped
-    from a humble eight dollars to over $60,000\n\n\nYour landlord threw out your
-    belongings including the harddrive \ncontaining 100 bitcoins!\n\n\nAfter calling
-    the city, they've allowed you to search for your lost \nharddrive on the condition
-    you help clean up the city.\n\n\nClean up the city and dig through pieces of
-    your past in the hope\nyou'll find your fortune!"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7b406871239f14501a85f1f020f277d4, type: 2}
   m_sharedMaterial: {fileID: -3893531983778817738, guid: 7b406871239f14501a85f1f020f277d4, type: 2}
@@ -279,15 +274,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 44
+  m_fontSizeBase: 44
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -347,7 +342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &825759402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -807,6 +802,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a756b73b1c445cfb9592bbba8b74ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1784574349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1784574350}
+  - component: {fileID: 1784574351}
+  m_Layer: 0
+  m_Name: StoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1784574350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784574349}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.167657, y: -5.7611055, z: -10.053352}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1784574351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784574349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e55651105924f429d7432ce32f9c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyText: {fileID: 753426952}
+  startGameButton: {fileID: 825759403}
 --- !u!1 &2133466127
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,3 +960,4 @@ SceneRoots:
   - {fileID: 2133466131}
   - {fileID: 84543825}
   - {fileID: 1763670406}
+  - {fileID: 1784574350}
