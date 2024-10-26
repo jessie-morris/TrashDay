@@ -54,5 +54,6 @@ public class ComputerManager : MonoBehaviour
         passwordPrompt.text += "Enter Password: ";
 
         passwordInput.gameObject.SetActive(true);
+        passwordInput.Select();
     }
 }
