@@ -10,8 +10,10 @@ public class ComputerManager : MonoBehaviour
     [SerializeField] private TMP_Text inputResponseText;
     [SerializeField] private TMP_InputField passwordInput;
 
+    private int attemptCount = 0;
+    private bool lockedOut = false;
     private bool booted = false;
-    // Update is called once per frame
+
     void Update()
     {
         if (!GameManager.instance.IsHardDriveAquired())
@@ -25,7 +27,7 @@ public class ComputerManager : MonoBehaviour
         }
         if (booted == true)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return) && !lockedOut)
             {
                 string cleanedPassword = passwordInput.text.ToLower().Replace(" ", "");
                 bool passwordMatch = Base64Encode(cleanedPassword) == "YW5jaG9yYmFuZGl0aXRhbHlrYXlsYQ==";
@@ -37,9 +39,16 @@ public class ComputerManager : MonoBehaviour
                     inputResponseText.text += "\nAccess Granted!";
                     inputResponseText.text += "\nBitcoin balance: 101.393 BTC.";
                 }
-                else
+                else if (attemptCount < 3)
                 {
+                    attemptCount++;
                     inputResponseText.text += "Invalid Password!\n";
+
+                    if (attemptCount == 3)
+                    {
+                        inputResponseText.text += "Too many attempts. Locked out.";
+                        lockedOut = true;
+                    }
                 }
             }
         }
