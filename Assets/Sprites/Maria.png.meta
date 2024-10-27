@@ -1,49 +1,28 @@
 fileFormatVersion: 2
-guid: 4ee5843fc71c6954ab9daafa40de566c
+guid: 78109cc5ff73d794d91e7283f89b4dbc
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: image_0
+    second: NPC3_0
   - first:
       213: 21300002
-    second: image_1
+    second: NPC3_1
   - first:
       213: 21300004
-    second: image_2
+    second: NPC3_2
   - first:
       213: 21300006
-    second: image_3
+    second: NPC3_3
   - first:
       213: 21300008
-    second: image_4
+    second: NPC3_4
   - first:
       213: 21300010
-    second: image_5
+    second: NPC3_5
   - first:
       213: 21300012
-    second: image_6
-  - first:
-      213: 21300014
-    second: image_7
-  - first:
-      213: 21300016
-    second: image_8
-  - first:
-      213: 21300018
-    second: image_9
-  - first:
-      213: 21300020
-    second: image_10
-  - first:
-      213: 21300022
-    second: image_11
-  - first:
-      213: 21300024
-    second: image_12
-  - first:
-      213: 21300026
-    second: image_13
+    second: NPC3_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Darwin_0
+      name: NPC3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 576
-        width: 192
-        height: 192
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e236596a101834d4882a1b0cbd7d8e7a
-      internalID: -1549918372
+      spriteID: 2a562db8fda4e8e45976e25de49737c0
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Darwin_1
+      name: NPC3_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 576
-        width: 192
-        height: 192
+        x: 256
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e605ea0e576a48bdb1890bdf0b25a33
-      internalID: 306341286
+      spriteID: fd543eee85831214eab1bb8439541c14
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Darwin_2
+      name: NPC3_2
       rect:
         serializedVersion: 2
-        x: 384
-        y: 576
-        width: 192
-        height: 192
+        x: 512
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,41 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f69e15176f35e49cc86b4eb95954ebbb
-      internalID: -1737132756
+      spriteID: 190dabf5ce2854b4a834912681e0f7aa
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Darwin_3
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 576
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c764a49e2fc21444290cd9d3b376bbde
-      internalID: 719247263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Darwin_4
+      name: NPC3_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
-        width: 192
-        height: 192
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 088134488c5ee4556944ba5c7b5edc76
-      internalID: 1765738385
+      spriteID: 6ce4702a9ce47ff4db01296866a3437c
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Darwin_5
+      name: NPC3_4
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
-        width: 192
-        height: 192
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc1bd27d8667949639a44a16d0f89439
-      internalID: 1761930565
+      spriteID: 781df19376c2e2e4f9b9d2058005f3df
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Darwin_6
+      name: NPC3_5
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
-        width: 192
-        height: 192
+        x: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,125 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1a5ffbd0bc154bc6b19ac3692ef5e8b
-      internalID: 899242808
+      spriteID: b4de88d6ad4a42e4cbb436417320eb15
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Darwin_7
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 384
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14cbda38341ab44889c04bcf9572858d
-      internalID: -800630385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Darwin_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0297d4af4e7ef46d7ae822b34bf2cbcc
-      internalID: -1852694397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Darwin_9
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6273cd3417ba40e6a37b0d2051f3b75
-      internalID: 145603331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Darwin_10
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60e13ec4b81d841f3ae1e3736859326c
-      internalID: -1223091140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Darwin_11
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 192
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bff4853ec4c7c4c7a860c4ffbba75e57
-      internalID: -1815749630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Darwin_12
+      name: NPC3_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 192
-        height: 192
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,29 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46589d729cfc04e988435134f70d28bc
-      internalID: 931176578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Darwin_13
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fb25d7c30d4740729350638fb89bf59
-      internalID: 1854528269
+      spriteID: f7fafb58c853b3040a8d7907ec7ccd7f
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -461,7 +293,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4aeb253b8293b344fa4150e23d0540a4
+    spriteID: b8e7a26afd9139d4b8cee62d1d381dd9
     internalID: 0
     vertices: []
     indices: 
@@ -469,20 +301,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Darwin_0: -1549918372
-      Darwin_1: 306341286
-      Darwin_10: -1223091140
-      Darwin_11: -1815749630
-      Darwin_12: 931176578
-      Darwin_13: 1854528269
-      Darwin_2: -1737132756
-      Darwin_3: 719247263
-      Darwin_4: 1765738385
-      Darwin_5: 1761930565
-      Darwin_6: 899242808
-      Darwin_7: -800630385
-      Darwin_8: -1852694397
-      Darwin_9: 145603331
+      NPC3_0: 21300000
+      NPC3_1: 21300002
+      NPC3_2: 21300004
+      NPC3_3: 21300006
+      NPC3_4: 21300008
+      NPC3_5: 21300010
+      NPC3_6: 21300012
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,7 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ComputerManager : MonoBehaviour
 {
@@ -9,6 +9,7 @@ public class ComputerManager : MonoBehaviour
     [SerializeField] private TMP_Text passwordPrompt;
     [SerializeField] private TMP_Text inputResponseText;
     [SerializeField] private TMP_InputField passwordInput;
+    [SerializeField] private Button endGameButton;
 
     private int attemptCount = 0;
     private bool lockedOut = false;
@@ -38,6 +39,7 @@ public class ComputerManager : MonoBehaviour
                 {
                     inputResponseText.text += "\nAccess Granted!";
                     inputResponseText.text += "\nBitcoin balance: 101.393 BTC.";
+                    endGameButton.gameObject.SetActive(true);
                 }
                 else if (attemptCount < 3)
                 {

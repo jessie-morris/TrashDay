@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CreditsManager : MonoBehaviour
 {
-    private int credits = 0;
+    private int credits = 4000;
     [SerializeField] private Animator newCreditsAnimator;
     [SerializeField] private Animator totalCreditsAnimator;
 
@@ -40,7 +40,7 @@ public class CreditsManager : MonoBehaviour
             {
                 totalCreditsAnimator.SetBool("GrowCredits", true); //emphasize score
                 yield return new WaitForSeconds(1);
-                
+
                 if (newCreditsAnimator != null && totalCreditsAnimator != null)
                 {
                     totalCreditsAnimator.SetBool("GrowCredits", false); //reset
