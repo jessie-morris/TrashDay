@@ -93,17 +93,21 @@ public class CreditsManager : MonoBehaviour
     {
         if (newCreditsAnimator == null)
         {
-            newCreditsAnimator = GameObject.FindWithTag("newCreditsAnimator").GetComponent<Animator>();
+            GameObject newCreditsGO =  GameObject.FindWithTag("newCreditsAnimator");
+            if(newCreditsGO != null)
+            {
+                newCreditsAnimator = newCreditsGO.GetComponent<Animator>();
+                addedCreditsText = newCreditsGO.GetComponent<TextMeshProUGUI>();
+            }
         }
 
         if (totalCreditsAnimator == null)
         {
-            totalCreditsAnimator = GameObject.FindWithTag("totalCreditsAnimator").GetComponent<Animator>();
-        }
-
-        if (addedCreditsText == null)
-        {
-            addedCreditsText = GameObject.FindWithTag("newCreditsAnimator").GetComponent<TextMeshProUGUI>();
+            GameObject totalCreditsGO = GameObject.FindWithTag("totalCreditsAnimator");
+            if(totalCreditsGO != null)
+            {
+                totalCreditsAnimator = totalCreditsGO.GetComponent<Animator>();
+            }
         }
     }
 }
