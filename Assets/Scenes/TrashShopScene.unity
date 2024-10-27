@@ -695,6 +695,8 @@ GameObject:
   - component: {fileID: 434221500}
   - component: {fileID: 434221499}
   - component: {fileID: 434221498}
+  - component: {fileID: 434221501}
+  - component: {fileID: 434221502}
   m_Layer: 0
   m_Name: DumpsterRed
   m_TagString: Untagged
@@ -816,6 +818,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434221496}
   m_CullTransparentMesh: 1
+--- !u!114 &434221501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434221496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6d4f9f517409d47b56f323a16fe2e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedAnimator: {fileID: 434221502}
+  hoverParameterName: redHovered
+--- !u!95 &434221502
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434221496}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b15b395d8478d8b4d82c7e2f6879181c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &474474383
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,6 +2253,8 @@ GameObject:
   - component: {fileID: 1728540935}
   - component: {fileID: 1728540934}
   - component: {fileID: 1728540936}
+  - component: {fileID: 1728540938}
+  - component: {fileID: 1728540937}
   m_Layer: 0
   m_Name: DumpsterGrey
   m_TagString: Untagged
@@ -2337,6 +2376,41 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &1728540937
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728540932}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b15b395d8478d8b4d82c7e2f6879181c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1728540938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728540932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6d4f9f517409d47b56f323a16fe2e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedAnimator: {fileID: 1728540937}
+  hoverParameterName: greyHovered
 --- !u!1 &1774564092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2483,6 +2557,8 @@ GameObject:
   - component: {fileID: 1781195156}
   - component: {fileID: 1781195155}
   - component: {fileID: 1781195154}
+  - component: {fileID: 1781195157}
+  - component: {fileID: 1781195158}
   m_Layer: 0
   m_Name: DumpsterGreen
   m_TagString: Untagged
@@ -2604,6 +2680,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781195152}
   m_CullTransparentMesh: 1
+--- !u!114 &1781195157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781195152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6d4f9f517409d47b56f323a16fe2e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedAnimator: {fileID: 1781195158}
+  hoverParameterName: greenHovered
+--- !u!95 &1781195158
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781195152}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b15b395d8478d8b4d82c7e2f6879181c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1972200502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2832,8 @@ GameObject:
   - component: {fileID: 2041490195}
   - component: {fileID: 2041490194}
   - component: {fileID: 2041490193}
+  - component: {fileID: 2041490196}
+  - component: {fileID: 2041490197}
   m_Layer: 0
   m_Name: DumpsterBlue
   m_TagString: Untagged
@@ -2842,6 +2955,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041490191}
   m_CullTransparentMesh: 1
+--- !u!114 &2041490196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041490191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6d4f9f517409d47b56f323a16fe2e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedAnimator: {fileID: 2041490197}
+  hoverParameterName: blueHovered
+--- !u!95 &2041490197
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041490191}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b15b395d8478d8b4d82c7e2f6879181c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2101394965
 GameObject:
   m_ObjectHideFlags: 0
