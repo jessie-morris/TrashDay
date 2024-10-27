@@ -29,12 +29,13 @@ Clean up the city and dig through pieces of your past in the hope you'll find yo
 
     IEnumerator ShowStory()
     {
+        AudioManager.instance.Play("keyboard");
         foreach (char c in storyString)
         {
             yield return new WaitForSeconds(0.05f);
             storyText.text += c;
         }
-
+        AudioManager.instance.Stop("keyboard");
         startGameButton.gameObject.SetActive(true);
     }
 }
