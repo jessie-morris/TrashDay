@@ -75,7 +75,6 @@ public class CanControls : MonoBehaviour
 
     bool CanMatchTrash(CanState state, string tag)
     {
-        Debug.Log(state + "state, tag: " + tag);
 
         if (state == CanState.Recycling && tag == "Recyclable")
         {

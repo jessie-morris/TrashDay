@@ -32,8 +32,6 @@ public class ComputerManager : MonoBehaviour
             {
                 string cleanedPassword = passwordInput.text.ToLower().Replace(" ", "");
                 bool passwordMatch = Base64Encode(cleanedPassword) == "YW5jaG9yYmFuZGl0aXRhbHlrYXlsYQ==";
-                Debug.Log(passwordMatch);
-                Debug.Log(Base64Encode(cleanedPassword));
 
                 if (passwordMatch)
                 {

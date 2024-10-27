@@ -3,7 +3,7 @@ using UnityEngine;
 using System;
 
 public class AudioManager : MonoBehaviour
-{   
+{
     //FindObjectOfType<AudioManager>().Play("SoundName");
     public Sound[] sounds;
     public static AudioManager instance;
@@ -14,8 +14,8 @@ public class AudioManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-        } 
-        else 
+        }
+        else
         {
             Destroy(gameObject);
             return;
@@ -35,61 +35,61 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
 
-         if(s == null)
-         {
+        if (s == null)
+        {
             Debug.LogWarning("Sound " + name + " not found!");
             return;
         }
 
-        if (!s.source.isPlaying){
-            //Debug.Log("playing sound: " + name);
+        if (!s.source.isPlaying)
+        {
             s.source.Play();
-        }        
+        }
     }
 
     public void Play(string name, float clipVolume)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
 
-         if(s == null)
-         {
+        if (s == null)
+        {
             Debug.LogWarning("Sound " + name + " not found!");
             return;
         }
 
-        if (!s.source.isPlaying){
-            //Debug.Log("playing sound: " + name);
+        if (!s.source.isPlaying)
+        {
             s.source.volume = clipVolume;
             s.source.Play();
-        }        
+        }
     }
 
     public void Stop(string name)
     {
-         Sound s = Array.Find(sounds, sound => sound.name == name);
+        Sound s = Array.Find(sounds, sound => sound.name == name);
 
-         if(s == null)
-         {
+        if (s == null)
+        {
             Debug.LogWarning("Sound " + name + " not found!");
             return;
         }
 
-        if (s.source.isPlaying){
+        if (s.source.isPlaying)
+        {
             s.source.Stop();
-        }        
+        }
     }
 
     public void PlayOneShot(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
 
-         if(s == null)
-         {
+        if (s == null)
+        {
             Debug.LogWarning("Sound " + name + " not found!");
             return;
         }
-        
-        Debug.Log("oneshot playing sound: " + name);
+
         s.source.PlayOneShot(s.clip, s.volume);
     }
 }
