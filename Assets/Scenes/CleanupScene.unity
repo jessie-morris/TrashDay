@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 370081101}
   m_Layer: 5
   m_Name: AdditionalCredits
-  m_TagString: Untagged
+  m_TagString: newCreditsAnimator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1261,7 +1261,7 @@ GameObject:
   - component: {fileID: 430666276}
   m_Layer: 5
   m_Name: Credits
-  m_TagString: Untagged
+  m_TagString: totalCreditsAnimator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

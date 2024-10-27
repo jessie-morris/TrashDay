@@ -28,6 +28,7 @@ public class CreditsManager : MonoBehaviour
     public void AddToScore(int points)
     {
         credits += points;
+        EnsureReferencesAreLoaded();
         StartCoroutine(AnimateCreditsText());
     }
 
@@ -42,7 +43,7 @@ public class CreditsManager : MonoBehaviour
             if (totalCreditsAnimator != null)
             {
                 totalCreditsAnimator.SetBool("GrowCredits", true); //emphasize score
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(1f);
 
                 if (newCreditsAnimator != null && totalCreditsAnimator != null)
                 {
@@ -56,7 +57,7 @@ public class CreditsManager : MonoBehaviour
     public void DeductFromScore(int points)
     {
         credits = Mathf.Max(0, credits - points);
-
+        EnsureReferencesAreLoaded();
         StartCoroutine(AnimateCreditsText_Subtraction());
     }
 
@@ -72,7 +73,7 @@ public class CreditsManager : MonoBehaviour
             if (totalCreditsAnimator != null)
             {
                 totalCreditsAnimator.SetBool("FlashRed", true); //emphasize negative score
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(1f);
 
                 if (newCreditsAnimator != null && totalCreditsAnimator != null)
                 {
@@ -86,5 +87,23 @@ public class CreditsManager : MonoBehaviour
     public int GetCredits()
     {
         return credits;
+    }
+
+    void EnsureReferencesAreLoaded()
+    {
+        if (newCreditsAnimator == null)
+        {
+            newCreditsAnimator = GameObject.FindWithTag("newCreditsAnimator").GetComponent<Animator>();
+        }
+
+        if (totalCreditsAnimator == null)
+        {
+            totalCreditsAnimator = GameObject.FindWithTag("totalCreditsAnimator").GetComponent<Animator>();
+        }
+
+        if (addedCreditsText == null)
+        {
+            addedCreditsText = GameObject.FindWithTag("newCreditsAnimator").GetComponent<TextMeshProUGUI>();
+        }
     }
 }

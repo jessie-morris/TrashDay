@@ -7,6 +7,8 @@ TagManager:
   - Compost
   - Trash
   - Recyclable
+  - newCreditsAnimator
+  - totalCreditsAnimator
   layers:
   - Default
   - TransparentFX
