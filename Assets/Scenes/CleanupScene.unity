@@ -2841,8 +2841,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: cc73c6cb12eefc343ade387ec56ea09f, type: 3}
   playerSprites:
   - {fileID: -1549918372, guid: 4ee5843fc71c6954ab9daafa40de566c, type: 3}
-  - {fileID: -1852694397, guid: 4ee5843fc71c6954ab9daafa40de566c, type: 3}
-  - {fileID: -1815749630, guid: 4ee5843fc71c6954ab9daafa40de566c, type: 3}
+  - {fileID: 21300000, guid: 15b1794020dd343d993cc8ab761c91ef, type: 3}
+  - {fileID: 21300000, guid: bc5d703c0e6ac4ac5b80965a4b7e8ef1, type: 3}
   player: {fileID: 1723086241}
 --- !u!50 &2139218810
 Rigidbody2D:
