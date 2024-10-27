@@ -68,7 +68,7 @@ public class CanControls : MonoBehaviour
             AudioManager.instance.PlayOneShot("Failure");
             StartCoroutine(ShakeHead());
             //Can we do an animation for this?
-            // CreditsManager.instance.DeductFromScore(50);
+            CreditsManager.instance.DeductFromScore(50);
         }
         Destroy(other.gameObject);
     }
