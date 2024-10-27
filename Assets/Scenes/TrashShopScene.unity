@@ -900,7 +900,7 @@ MonoBehaviour:
   DogCollarImage: {fileID: 21300000, guid: 3f8b11b5e5df0460cb4124d73ecaec0a, type: 3}
   NotebookImage: {fileID: 21300000, guid: 56dce93b4969c4e588213e8aedc9b362, type: 3}
   VacationImage: {fileID: 21300000, guid: 7043cc80a213f4c3f910af4d833651e9, type: 3}
-  QuestionMarkImage: {fileID: 21300000, guid: d5bfed85fe63045ed8f1dd1dfcad1c27, type: 3}
+  QuestionMarkImage: {fileID: 21300000, guid: f8168fd1e4faa4c80a4eb208a34270f0, type: 3}
 --- !u!4 &474474385
 Transform:
   m_ObjectHideFlags: 0
