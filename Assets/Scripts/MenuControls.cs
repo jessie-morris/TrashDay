@@ -6,99 +6,50 @@ public class MenuControls : MonoBehaviour
 {
     public void StartGame_OnClick()
     {
-        StartCoroutine(LoadStoryScene());
-    }
-
-    IEnumerator LoadStoryScene()
-    {
-        AudioManager.instance.PlayOneShot("Click");
-        yield return new WaitForSeconds(.5f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("StoryScene");
+        StartCoroutine(LoadScene("StoryScene"));
     }
 
     public void CleanupTime_OnClick()
     {
-        StartCoroutine(LoadInstructionsScene());
-    }
-
-    IEnumerator LoadInstructionsScene()
-    {
-        AudioManager.instance.PlayOneShot("Click");
-        yield return new WaitForSeconds(.5f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("InstructionsScene");
+        StartCoroutine(LoadScene("InstructionsScene"));
     }
 
     public void Ok_OnClick()
     {
-        StartCoroutine(LoadCleanupScene());
-    }
-
-    IEnumerator LoadCleanupScene()
-    {
-        AudioManager.instance.PlayOneShot("Click");
-        yield return new WaitForSeconds(.5f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("CleanupScene");
+        StartCoroutine(LoadScene("CleanupScene"));
     }
 
     public void Back_OnClick()
     {
-        StartCoroutine(LoadMidgameMenuScene());
-    }
-
-    IEnumerator LoadMidgameMenuScene()
-    {
-        AudioManager.instance.PlayOneShot("Click");
-        yield return new WaitForSeconds(.5f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MidgameMenuScene");
+        StartCoroutine(LoadScene("MidgameMenuScene"));
     }
 
     public void SearchDumpsters_OnClick()
     {
-        StartCoroutine(LoadTrashShopScene());
-    }
-
-    IEnumerator LoadTrashShopScene()
-    {
-        AudioManager.instance.PlayOneShot("Click");
-        yield return new WaitForSeconds(.5f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("TrashShopScene");
+        StartCoroutine(LoadScene("TrashShopScene"));
     }
 
     public void Hints_OnClick()
     {
-        StartCoroutine(LoadHintsScene());
-    }
-
-    IEnumerator LoadHintsScene()
-    {
-        AudioManager.instance.PlayOneShot("Click");
-        yield return new WaitForSeconds(.5f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("HintsScene");
+        StartCoroutine(LoadScene("HintsScene"));
     }
 
     public void Computer_OnClick()
     {
-        StartCoroutine(LoadComputerScene());
-    }
-
-    IEnumerator LoadComputerScene()
-    {
-        AudioManager.instance.PlayOneShot("Click");
-        yield return new WaitForSeconds(.5f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("ComputerScene");
+        StartCoroutine(LoadScene("ComputerScene"));
     }
 
     public void EarnCredits_OnClick()
     {
         GameManager.instance.resetTimeElapsed();
-        StartCoroutine(LoadCleanupScene());
+        StartCoroutine(LoadScene("CleanupScene"));
     }
 
-    IEnumerator LoadCleanUpScene()
+    IEnumerator LoadScene(string sceneName)
     {
         AudioManager.instance.PlayOneShot("Click");
-        yield return new WaitForSeconds(.5f);
-        UnityEngine.SceneManagement.SceneManager.LoadScene("CleanupScene");
+        yield return new WaitForSeconds(.15f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
     }
 
 }
