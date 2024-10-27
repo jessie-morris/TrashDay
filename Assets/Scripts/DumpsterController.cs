@@ -93,6 +93,7 @@ public class DumpsterController : MonoBehaviour
 
     public void hideRewardPanel_OnClick()
     {
+        AudioManager.instance.PlayOneShot("Click");
         rewardPanel.SetActive(false);
     }
 
