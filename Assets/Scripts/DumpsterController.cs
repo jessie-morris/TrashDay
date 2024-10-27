@@ -22,7 +22,7 @@ public class DumpsterController : MonoBehaviour
     [SerializeField] private Sprite HardDriveImage;
     [SerializeField] private Sprite DogCollarImage;
     [SerializeField] private Sprite NotebookImage;
-    [SerializeField] private Sprite MascotImage;
+    [SerializeField] private Sprite VacationImage;
     [SerializeField] private Sprite QuestionMarkImage;
 
     public void DumpsterGrey_OnClick()
@@ -74,14 +74,10 @@ public class DumpsterController : MonoBehaviour
 
     void ShowReward()
     {
-        bool isReward = Random.Range(0, 2) == 0;
+        bool isReward = Random.Range(0, 2) == 0 || !GameManager.instance.IsVacationAquired();
         if (isReward)
         {
-            //pick a random unclaimed reward here, right now hardcoded to harddrive
-            dumpsterRewardHeader.text = "You found a piece of your past!";
-            dumpsterReward.sprite = HardDriveImage;
-            dumpsterRewardDescription.text = "You found your lost harddrive!";
-
+            showReward();
             rewardPanel.SetActive(true);
         }
         else
@@ -97,5 +93,66 @@ public class DumpsterController : MonoBehaviour
     public void hideRewardPanel_OnClick()
     {
         rewardPanel.SetActive(false);
+    }
+
+    private void showReward()
+    {
+        //TODO: should I ever change the order here?
+        if (!GameManager.instance.IsVacationAquired())
+        {
+            showVacationReward();
+        }
+        else if (!GameManager.instance.IsHardDriveAquired())
+        {
+            showHarddriveReward();
+        }
+        else if (!GameManager.instance.IsCollarAquired())
+        {
+            showDogCollarReward();
+        }
+        else if (!GameManager.instance.IsNotebookAquired())
+        {
+            showNotebookReward();
+        }
+        else if (!GameManager.instance.IsPhotoAquired())
+        {
+            showCouplePhotoReward();
+        }
+    }
+
+    void showHarddriveReward()
+    {
+        dumpsterRewardHeader.text = "You found a piece of your past!";
+        dumpsterReward.sprite = HardDriveImage;
+        dumpsterRewardDescription.text = "You found your lost harddrive! I should plug it into my computer";
+        GameManager.instance.SetHardDriveAquired();
+    }
+    void showCouplePhotoReward()
+    {
+        dumpsterRewardHeader.text = "You found a piece of your past!";
+        dumpsterReward.sprite = CouplesPhotoImage;
+        dumpsterRewardDescription.text = "You found a romantic picture, your heart aches";
+        GameManager.instance.SetPhotoAquired();
+    }
+    void showDogCollarReward()
+    {
+        dumpsterRewardHeader.text = "You found a piece of your past!";
+        dumpsterReward.sprite = DogCollarImage;
+        dumpsterRewardDescription.text = "You found your dog's old collar, you miss him so much.";
+        GameManager.instance.SetCollarAquired();
+    }
+    void showNotebookReward()
+    {
+        dumpsterRewardHeader.text = "You found a piece of your past!";
+        dumpsterReward.sprite = NotebookImage;
+        dumpsterRewardDescription.text = "You found your old notebook, or at least what's left of it.";
+        GameManager.instance.SetNotebookAquired();
+    }
+    void showVacationReward()
+    {
+        dumpsterRewardHeader.text = "You found a piece of your past!";
+        dumpsterReward.sprite = VacationImage;
+        dumpsterRewardDescription.text = "You found a picture from your last vacation, you can't wait to see the world again.";
+        GameManager.instance.SetVacationAquired();
     }
 }

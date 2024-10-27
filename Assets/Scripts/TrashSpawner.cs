@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TrashSpawner : MonoBehaviour
 {
-    private float spawnRate = 2;
+    private float spawnRate = 2f;
     private float timeSinceTrash = 0;
     public GameObject[] TrashSprites;
 

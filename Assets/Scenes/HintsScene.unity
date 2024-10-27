@@ -254,7 +254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d4580a21c8521465bbb7dba6f80907b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 56dce93b4969c4e588213e8aedc9b362, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 991098135}
   - component: {fileID: 991098134}
   m_Layer: 0
-  m_Name: Mascot
+  m_Name: Vacation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -751,7 +751,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 400}
+  m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991098134
 MonoBehaviour:
@@ -773,7 +773,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d5bfed85fe63045ed8f1dd1dfcad1c27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7043cc80a213f4c3f910af4d833651e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1023,12 +1023,12 @@ MonoBehaviour:
   HardDrive: {fileID: 4191232}
   DogCollar: {fileID: 1461896814}
   Notebook: {fileID: 128488831}
-  Mascot: {fileID: 991098134}
-  CouplesPhotoImage: {fileID: 21300000, guid: a96b0d65252014b5ea6eb6274fdec51c, type: 3}
+  Vacation: {fileID: 991098134}
+  CouplesPhotoImage: {fileID: 21300000, guid: a2ae6a31bb2b94e15a5ef81b566f0c5e, type: 3}
   HardDriveImage: {fileID: 21300000, guid: 230ab9e8d820f4243b10ec029be64da0, type: 3}
   DogCollarImage: {fileID: 21300000, guid: 3f8b11b5e5df0460cb4124d73ecaec0a, type: 3}
-  NotebookImage: {fileID: 21300000, guid: d4580a21c8521465bbb7dba6f80907b2, type: 3}
-  MascotImage: {fileID: 21300000, guid: 230ab9e8d820f4243b10ec029be64da0, type: 3}
+  NotebookImage: {fileID: 21300000, guid: 56dce93b4969c4e588213e8aedc9b362, type: 3}
+  VacationImage: {fileID: 21300000, guid: 7043cc80a213f4c3f910af4d833651e9, type: 3}
   QuestionMarkImage: {fileID: 21300000, guid: d5bfed85fe63045ed8f1dd1dfcad1c27, type: 3}
 --- !u!4 &1267863127
 Transform:
@@ -1207,7 +1207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a96b0d65252014b5ea6eb6274fdec51c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2ae6a31bb2b94e15a5ef81b566f0c5e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

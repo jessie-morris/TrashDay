@@ -14,8 +14,7 @@ public class ComputerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (!GameManager.instance.IsHardDriveAquired())
-        if (false)
+        if (!GameManager.instance.IsHardDriveAquired())
         {
             consoleText.text = "Error: No Hard Drive found!";
         }
@@ -28,7 +27,12 @@ public class ComputerManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                if (passwordInput.text == "correctPassword")
+                string cleanedPassword = passwordInput.text.ToLower().Replace(" ", "");
+                bool passwordMatch = Base64Encode(cleanedPassword) == "YW5jaG9yYmFuZGl0aXRhbHlrYXlsYQ==";
+                Debug.Log(passwordMatch);
+                Debug.Log(Base64Encode(cleanedPassword));
+
+                if (passwordMatch)
                 {
                     inputResponseText.text += "\nAccess Granted!";
                     inputResponseText.text += "\nBitcoin balance: 101.393 BTC.";
@@ -55,5 +59,11 @@ public class ComputerManager : MonoBehaviour
 
         passwordInput.gameObject.SetActive(true);
         passwordInput.Select();
+    }
+
+    public static string Base64Encode(string plainText)
+    {
+        var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+        return System.Convert.ToBase64String(plainTextBytes);
     }
 }

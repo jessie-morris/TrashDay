@@ -13,18 +13,18 @@ public class GameManager : MonoBehaviour
     private bool notebookAquired = false;
     private bool photoAquired = false;
     private bool collarAquired = false;
-    private bool mascotAquired = false;
+    private bool vacationAquired = false;
 
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
-            DontDestroyOnLoad(gameObject);
         }
     }
 
@@ -37,6 +37,31 @@ public class GameManager : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("MidgameMenuScene");
         }
 
+    }
+
+    public void SetHardDriveAquired()
+    {
+        hardDriveAquired = true;
+    }
+
+    public void SetNotebookAquired()
+    {
+        notebookAquired = true;
+    }
+
+    public void SetPhotoAquired()
+    {
+        photoAquired = true;
+    }
+
+    public void SetCollarAquired()
+    {
+        collarAquired = true;
+    }
+
+    public void SetVacationAquired()
+    {
+        vacationAquired = true;
     }
 
     public bool IsHardDriveAquired()
@@ -59,8 +84,14 @@ public class GameManager : MonoBehaviour
         return collarAquired;
     }
 
-    public bool IsMascotAquired()
+    public bool IsVacationAquired()
     {
-        return mascotAquired;
+        return vacationAquired;
+    }
+
+    public void resetTimeElapsed()
+    {
+        timeElapsed = 0f;
+        trashShopping = false;
     }
 }

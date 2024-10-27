@@ -13,13 +13,12 @@ public class CreditsManager : MonoBehaviour
     {
         if (instance == null)
         {
-            Debug.Log("making a credit manager at: " + Time.time);
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
-            DontDestroyOnLoad(gameObject);
         }
     }
 

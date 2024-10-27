@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 161616203}
   - component: {fileID: 161616202}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: RewardPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -852,11 +852,11 @@ MonoBehaviour:
   dumpsterReward: {fileID: 514024950}
   dumpsterRewardHeader: {fileID: 2101394967}
   dumpsterRewardDescription: {fileID: 1583068528}
-  CouplesPhotoImage: {fileID: 21300000, guid: a96b0d65252014b5ea6eb6274fdec51c, type: 3}
+  CouplesPhotoImage: {fileID: 21300000, guid: a2ae6a31bb2b94e15a5ef81b566f0c5e, type: 3}
   HardDriveImage: {fileID: 21300000, guid: 230ab9e8d820f4243b10ec029be64da0, type: 3}
   DogCollarImage: {fileID: 21300000, guid: 3f8b11b5e5df0460cb4124d73ecaec0a, type: 3}
-  NotebookImage: {fileID: 21300000, guid: d4580a21c8521465bbb7dba6f80907b2, type: 3}
-  MascotImage: {fileID: 21300000, guid: d5bfed85fe63045ed8f1dd1dfcad1c27, type: 3}
+  NotebookImage: {fileID: 21300000, guid: 56dce93b4969c4e588213e8aedc9b362, type: 3}
+  VacationImage: {fileID: 21300000, guid: 7043cc80a213f4c3f910af4d833651e9, type: 3}
   QuestionMarkImage: {fileID: 21300000, guid: d5bfed85fe63045ed8f1dd1dfcad1c27, type: 3}
 --- !u!4 &474474385
 Transform:
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1606755752}
         m_TargetAssemblyTypeName: MenuControls, Assembly-CSharp
         m_MethodName: Back_OnClick
         m_Mode: 1
@@ -2058,8 +2058,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -70}
+  m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1583068528
 MonoBehaviour:
@@ -2081,7 +2081,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A photo you vaguely remember
+  m_text: A really long sentence goes here, what do you think it should say if we
+    keep typing to the third or fourth row
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7b406871239f14501a85f1f020f277d4, type: 2}
   m_sharedMaterial: {fileID: -3893531983778817738, guid: 7b406871239f14501a85f1f020f277d4, type: 2}
@@ -2108,8 +2109,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2124,7 +2125,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -2876,7 +2877,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101394967
 MonoBehaviour:
@@ -2925,8 +2926,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -40,6 +40,7 @@ public class MenuControls : MonoBehaviour
 
     public void EarnCredits_OnClick()
     {
+        GameManager.instance.resetTimeElapsed();
         UnityEngine.SceneManagement.SceneManager.LoadScene("CleanupScene");
     }
 

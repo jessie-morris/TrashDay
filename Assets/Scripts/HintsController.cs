@@ -11,14 +11,14 @@ public class HintsController : MonoBehaviour
     [SerializeField] private Image HardDrive;
     [SerializeField] private Image DogCollar;
     [SerializeField] private Image Notebook;
-    [SerializeField] private Image Mascot;
+    [SerializeField] private Image Vacation;
 
     [Header("Sprites")]
     [SerializeField] private Sprite CouplesPhotoImage;
     [SerializeField] private Sprite HardDriveImage;
     [SerializeField] private Sprite DogCollarImage;
     [SerializeField] private Sprite NotebookImage;
-    [SerializeField] private Sprite MascotImage;
+    [SerializeField] private Sprite VacationImage;
     [SerializeField] private Sprite QuestionMarkImage;
 
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class HintsController : MonoBehaviour
         ShowHintImage(GameManager.instance.IsHardDriveAquired, HardDrive, HardDriveImage);
         ShowHintImage(GameManager.instance.IsCollarAquired, DogCollar, DogCollarImage);
         ShowHintImage(GameManager.instance.IsNotebookAquired, Notebook, NotebookImage);
-        ShowHintImage(GameManager.instance.IsMascotAquired, Mascot, MascotImage);
+        ShowHintImage(GameManager.instance.IsVacationAquired, Vacation, VacationImage);
     }
 
     public void ShowHintImage(Func<bool> foundFunction, Image hintImage, Sprite hintSprite)
