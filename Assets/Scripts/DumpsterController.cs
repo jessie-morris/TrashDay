@@ -48,7 +48,7 @@ public class DumpsterController : MonoBehaviour
     private void TryOpenDumpster(GameObject dumpster)
     {
         //Fix after credit manager is working
-        if (CreditsManager.instance.GetCredits() > 1000)
+        if (CreditsManager.instance.GetCredits() >= 1000)
         {
             StartCoroutine(ShakeAndOpen(dumpster));
             CreditsManager.instance.DeductFromScore(1000);
