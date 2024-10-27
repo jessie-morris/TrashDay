@@ -55,6 +55,12 @@ public class GameManager : MonoBehaviour
         triesWithoutSuccess++;
     }
 
+    public string GetTimeRemaining()
+    {
+        float timeRemaining = Mathf.RoundToInt(timeToNextScene - timeElapsed);
+        return "0:" + timeRemaining.ToString("00");
+    }
+
     public void SetHardDriveAquired()
     {
         hardDriveAquired = true;
