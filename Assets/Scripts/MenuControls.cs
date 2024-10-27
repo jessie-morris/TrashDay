@@ -50,6 +50,11 @@ public class MenuControls : MonoBehaviour
         StartCoroutine(LoadScene("EndScene"));
     }
 
+    public void ExitGame_OnClick()
+    {
+        Application.Quit();
+    }
+
     IEnumerator LoadScene(string sceneName)
     {
         AudioManager.instance.PlayOneShot("Click");
