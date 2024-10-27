@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     public bool CatchUp()
     {
-        bool catchUp = triesWithoutSuccess > 2;
+        bool catchUp = triesWithoutSuccess > 1;
         if (catchUp)
         {
             triesWithoutSuccess = 0;
