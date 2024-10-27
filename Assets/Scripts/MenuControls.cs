@@ -42,4 +42,5 @@ public class MenuControls : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("CleanupScene");
     }
+
 }
