@@ -56,11 +56,11 @@ public class CreditsManager : MonoBehaviour
     public void DeductFromScore(int points)
     {
         credits = Mathf.Max(0, credits - points);
-        
+
         StartCoroutine(AnimateCreditsText_Subtraction());
     }
 
-     IEnumerator AnimateCreditsText_Subtraction()
+    IEnumerator AnimateCreditsText_Subtraction()
     {
         if (newCreditsAnimator != null)
         {

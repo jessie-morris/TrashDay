@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     private bool photoAquired = false;
     private bool collarAquired = false;
     private bool vacationAquired = false;
+    private int triesWithoutSuccess = 0;
 
     void Awake()
     {
@@ -37,6 +38,21 @@ public class GameManager : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("MidgameMenuScene");
         }
 
+    }
+
+    public bool CatchUp()
+    {
+        bool catchUp = triesWithoutSuccess > 2;
+        if (catchUp)
+        {
+            triesWithoutSuccess = 0;
+        }
+        return catchUp;
+    }
+
+    public void AddTry()
+    {
+        triesWithoutSuccess++;
     }
 
     public void SetHardDriveAquired()

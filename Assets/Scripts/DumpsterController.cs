@@ -74,7 +74,7 @@ public class DumpsterController : MonoBehaviour
 
     void ShowReward()
     {
-        bool isReward = Random.Range(0, 2) == 0 || !GameManager.instance.IsVacationAquired();
+        bool isReward = Random.Range(0, 20) == 0 || !GameManager.instance.IsVacationAquired() || GameManager.instance.CatchUp();
         if (isReward)
         {
             showReward();
@@ -86,6 +86,7 @@ public class DumpsterController : MonoBehaviour
             dumpsterReward.sprite = QuestionMarkImage;
             dumpsterRewardDescription.text = "Only trash in this one, keep looking!";
             rewardPanel.SetActive(true);
+            GameManager.instance.AddTry();
         }
 
     }
