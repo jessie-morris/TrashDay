@@ -708,7 +708,7 @@ MonoBehaviour:
   - name: Click
     clip: {fileID: 8300000, guid: 06fe37e6c3aaa421c9d354d98faae608, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 1.5
     source: {fileID: 0}
     loop: 0
 --- !u!4 &1200655007
