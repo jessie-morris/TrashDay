@@ -16,7 +16,7 @@ public class EndSceneManager : MonoBehaviour
 
     Credits:
     Jessie Morris - www.github.com/jessiemorris
-    Jacob Rutter - www.github.com/jacobrutter - https://www.youtube.com/user/SuperDutchrutter";
+    Jake Rutter - https://jakerutter.itch.io/";
 
 
     // Start is called before the first frame update
