@@ -53,13 +53,16 @@ public class CanControls : MonoBehaviour
         bool match = CanMatchTrash((CanState)spriteIndex, tag);
         if (match)
         {
-            Debug.Log("is we hurr?");
             CreditsManager.instance.AddToScore(150);
+            AudioManager.instance.PlayOneShot("Success");
         }
         else
         {
-            //Just removing for now until it seems to make sense to add back
-            // CreditsManager.instance.DeductFromScore(100);
+            Debug.Log("Is we not playing dis?");
+            AudioManager.instance.PlayOneShot("Failure");
+
+            //Can we do an animation for this?
+            // CreditsManager.instance.DeductFromScore(50);
         }
         Destroy(other.gameObject);
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CreditsManager : MonoBehaviour
 {
-    private int credits = 4000;
+    private int credits = 0;
     [SerializeField] private Animator newCreditsAnimator;
     [SerializeField] private Animator totalCreditsAnimator;
 

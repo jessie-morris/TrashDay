@@ -154,13 +154,25 @@ MonoBehaviour:
   sounds:
   - name: CleanupTheme
     clip: {fileID: 8300000, guid: 42a6e4e230cce4646953a0dd33a9d75a, type: 3}
-    volume: 1
+    volume: 0.2
     pitch: 1
     source: {fileID: 0}
     loop: 1
   - name: Click
     clip: {fileID: 8300000, guid: 18793a95e90772943a77d5a19223003c, type: 3}
     volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Success
+    clip: {fileID: 8300000, guid: 42c7b5d33b133b847b5997a1e307f1f2, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Failure
+    clip: {fileID: 8300000, guid: 84f51ab22fb8c12448823036de7c4739, type: 3}
+    volume: 10
     pitch: 1
     source: {fileID: 0}
     loop: 0
