@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class CanControls : MonoBehaviour
 {
-    public Sprite[] canSprites;
+    [SerializeField] private Sprite[] canSprites;
+    [SerializeField] private Sprite[] playerSprites;
+    [SerializeField] private GameObject player;
+    private SpriteRenderer playerSpriteRenderer;
 
     private float speed = 8;
     private SpriteRenderer spriteRenderer;
     private int spriteIndex = 0;
+
 
     enum CanState
     {
@@ -19,7 +23,10 @@ public class CanControls : MonoBehaviour
 
     void Start()
     {
+
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
+
         AudioManager.instance.Play("CleanupTheme");
     }
 
@@ -58,9 +65,8 @@ public class CanControls : MonoBehaviour
         }
         else
         {
-            Debug.Log("Is we not playing dis?");
             AudioManager.instance.PlayOneShot("Failure");
-
+            StartCoroutine(ShakeHead());
             //Can we do an animation for this?
             // CreditsManager.instance.DeductFromScore(50);
         }
@@ -84,6 +90,20 @@ public class CanControls : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    IEnumerator ShakeHead()
+    {
+        playerSpriteRenderer.sprite = playerSprites[1];
+        yield return new WaitForSeconds(0.1f);
+        playerSpriteRenderer.sprite = playerSprites[2];
+        yield return new WaitForSeconds(0.1f);
+        playerSpriteRenderer.sprite = playerSprites[1];
+        yield return new WaitForSeconds(0.1f);
+        playerSpriteRenderer.sprite = playerSprites[2];
+        yield return new WaitForSeconds(0.1f);
+        playerSpriteRenderer.sprite = playerSprites[0];
+        yield return null;
     }
 
     // private Vector3 BoundToScreen(Vector3 newPosition)
