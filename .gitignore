@@ -74,3 +74,6 @@ crashlytics-build.properties
 .DS_Store
 
 Ignore*
+
+WebGL Builds/
+connectwebgl.zip
