@@ -8,7 +8,6 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
     public static AudioManager instance;
 
-    // Awake is called before start
     void Awake()
     {
 
@@ -30,11 +29,6 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
-    }
-
-    void Start()
-    {
-        //Play("Theme", .1f);
     }
 
     public void Play(string name)
@@ -87,7 +81,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayOneShot(string name)
     {
-         Sound s = Array.Find(sounds, sound => sound.name == name);
+        Sound s = Array.Find(sounds, sound => sound.name == name);
 
          if(s == null)
          {
@@ -95,7 +89,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
         
-        //Debug.Log("oneshot playing sound: " + name);
+        Debug.Log("oneshot playing sound: " + name);
         s.source.PlayOneShot(s.clip, s.volume);
     }
 }
