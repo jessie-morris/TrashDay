@@ -853,7 +853,7 @@ MonoBehaviour:
   dumpsterReward: {fileID: 514024950}
   dumpsterRewardHeader: {fileID: 2101394967}
   dumpsterRewardDescription: {fileID: 1583068528}
-  CouplesPhotoImage: {fileID: 21300000, guid: a2ae6a31bb2b94e15a5ef81b566f0c5e, type: 3}
+  CouplesPhotoImage: {fileID: 21300000, guid: 0f6b3a635ebda4f82a255a4c79a79356, type: 3}
   HardDriveImage: {fileID: 21300000, guid: 230ab9e8d820f4243b10ec029be64da0, type: 3}
   DogCollarImage: {fileID: 21300000, guid: 3f8b11b5e5df0460cb4124d73ecaec0a, type: 3}
   NotebookImage: {fileID: 21300000, guid: 56dce93b4969c4e588213e8aedc9b362, type: 3}
