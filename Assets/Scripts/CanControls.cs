@@ -36,7 +36,7 @@ public class CanControls : MonoBehaviour
 
         if (horizontal != 0)
         {
-            float newX = Mathf.Clamp(transform.position.x + (horizontal * speed * Time.deltaTime), -8f, 8f);
+            float newX = Mathf.Clamp(transform.position.x + (horizontal * speed * Time.deltaTime), -7.25f, 7.25f);
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
         }
 

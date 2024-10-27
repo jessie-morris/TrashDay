@@ -24,7 +24,7 @@ public class TrashSpawner : MonoBehaviour
     }
     void SpawnTrash()
     {
-        float randomX = Random.Range(-8f, 8f);
+        float randomX = Random.Range(-7f, 7f);
         Vector3 spawnPosition = new Vector3(randomX, 6, 0);
 
         int randomTrash = Random.Range(0, TrashSprites.Length);
